@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.navBar{
+    width: 100%;
+    height: 70px;
+    background-color: #F0ED40;
+  }
+  
+  .navBarContainer{
+    height: 100%;
+    margin: 0 150px 0 150px;
+  }
+  
+  .navBarList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  li{
+    list-style-type: none;
+  }
+
+  .mainLogo{
+    font-family: 'Bungee';
+    color: #F08154;
+    text-shadow: -3px 3px 0px #9348F0;
+    font-size: 32px;
+    cursor: pointer;
+  }
