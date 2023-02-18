@@ -1,0 +1,10 @@
+.mainItemsContainer{
+    margin: 4rem 10rem 0 10rem;
+}
+
+.itemListContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: space-around;
+    grid-gap: 40px;
+}
