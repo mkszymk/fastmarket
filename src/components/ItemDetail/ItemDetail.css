@@ -1,0 +1,23 @@
+.mainItemContainer{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemShowContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.itemImage{
+    height: 500px;
+}
+
+.itemInfo{
+
+}

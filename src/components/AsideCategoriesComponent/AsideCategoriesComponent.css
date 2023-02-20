@@ -1,0 +1,46 @@
+.singleAsideElement{
+    width: 100%;
+
+}
+
+.categoriesContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0 2rem;
+
+}
+
+ul{
+    width: 100%;
+}
+
+li{
+    margin: 4px 0 4px 15px;
+    padding: 3px 0 3px 3px;
+}
+
+li:hover{
+    background-color: white;
+}
+
+a{
+    width: 100%;
+    all:unset;
+}
+
+.active{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.inactive{
+    font-weight: 400;
+}
+
+p{
+    cursor: pointer;
+}
+
+.selected{
+    background-color: red;
+}
