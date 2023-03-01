@@ -1,0 +1,32 @@
+.itemCounterContainer{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(228, 228, 228);
+}
+
+.counterBtn{
+    all: unset;
+    padding: 6px 8px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: rgb(219, 239, 255);
+    font-weight: 800;
+}
+
+.btnDisabled{
+    background-color: rgb(219, 219, 219);
+}
+
+
+.btnEnabled:hover{
+    background-color: rgb(193, 227, 255);
+}
+
+.btnEnabled:active{
+    background-color: rgb(163, 210, 232);
+}
+

@@ -12,7 +12,7 @@ export default function ItemDetailContainer() {
     setTimeout(() => {
       const findProduct = products.find((e) => e.id === Number(id));
       resolve(findProduct);
-    }, 1000);
+    }, 1);
   });
 
   useEffect(() => {
