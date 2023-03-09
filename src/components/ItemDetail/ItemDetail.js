@@ -1,8 +1,10 @@
 import "./ItemDetail.css";
 import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
+import { useNavigate } from "react-router-dom";
 
 const ItemDetail = ({ product }) => {
+  const navigateTo = useNavigate();
   const [quantity, setQuantity] = useState(1);
 
   const addToCart = () => {
@@ -29,6 +31,9 @@ const ItemDetail = ({ product }) => {
           <div className="stock">Stock disponible: {product.stock}</div>
           <button className="addToCartBtn" onClick={addToCart}>
             Agregar al carrito
+          </button>
+          <button className="buyNowBtn" onClick={() => navigateTo("/cart")}>
+            Comprar ahora
           </button>
         </div>
       </div>

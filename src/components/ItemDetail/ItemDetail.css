@@ -45,3 +45,22 @@
 .addToCartBtn:active{
     background-color: rgb(111, 192, 250);
 }
+
+.buyNowBtn{
+    all: unset;
+    margin-top: 2rem;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(106, 106, 106);
+    background-color: rgb(77, 255, 178);
+    color: black;
+    font-weight: 500;
+}
+
+.buyNowBtn:hover{
+    background-color: rgb(68, 239, 165);
+}
+
+.buyNowBtn:active{
+    background-color: rgb(147, 255, 208);
+}
