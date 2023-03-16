@@ -2,14 +2,13 @@ import "./ItemDetail.css";
 import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ product }) => {
   const navigateTo = useNavigate();
   const [quantity, setQuantity] = useState(1);
-
-  const addToCart = () => {
-    console.log({ ...product, quantity });
-  };
+  const { addToCart } = useContext(CartContext);
 
   return (
     <div className="mainItemContainer">
@@ -29,7 +28,10 @@ const ItemDetail = ({ product }) => {
             setQuantity={setQuantity}
           />
           <div className="stock">Stock disponible: {product.stock}</div>
-          <button className="addToCartBtn" onClick={addToCart}>
+          <button
+            className="addToCartBtn"
+            onClick={() => addToCart(product, quantity)}
+          >
             Agregar al carrito
           </button>
           <button className="buyNowBtn" onClick={() => navigateTo("/cart")}>
