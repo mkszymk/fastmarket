@@ -7,6 +7,15 @@ const products = [
     stock: 6,
     img: "/img/sgs23.jpg",
     id: 0,
+    tags: [
+      "celular",
+      "samsung",
+      "galaxy",
+      "s23",
+      "movil",
+      "smartphone",
+      "celulares",
+    ],
   },
   {
     name: "Huawei Nova 10",
@@ -16,6 +25,15 @@ const products = [
     stock: 4,
     img: "/img/hn10.jpg",
     id: 1,
+    tags: [
+      "celular",
+      "huawei",
+      "nova",
+      "10",
+      "movil",
+      "smartphone",
+      "celulares",
+    ],
   },
   {
     name: "Motorola Edge 20 Pro",
@@ -25,6 +43,16 @@ const products = [
     stock: 9,
     img: "/img/me20.jpg",
     id: 2,
+    tags: [
+      "celular",
+      "motorola",
+      "edge",
+      "20",
+      "pro",
+      "movil",
+      "smartphone",
+      "celulares",
+    ],
   },
   {
     name: "iPhone 14",
@@ -34,6 +62,15 @@ const products = [
     stock: 5,
     img: "/img/i14.jpg",
     id: 3,
+    tags: [
+      "celular",
+      "iphone",
+      "14",
+      "apple",
+      "movil",
+      "smartphone",
+      "celulares",
+    ],
   },
   {
     name: "Xiaomi 12",
@@ -43,6 +80,7 @@ const products = [
     stock: 2,
     img: "/img/x12.jpg",
     id: 4,
+    tags: ["celular", "xiaomi", "12", "movil", "smartphone", "celulares"],
   },
   {
     name: "OnePlus 11",
@@ -52,6 +90,7 @@ const products = [
     stock: 3,
     img: "/img/op11.jpg",
     id: 5,
+    tags: ["celular", "oneplus", "11", "movil", "smartphone", "celulares"],
   },
   {
     name: "PlayStation 5",
@@ -61,6 +100,16 @@ const products = [
     stock: 4,
     img: "/img/ps5.jpg",
     id: 6,
+    tags: [
+      "consola",
+      "playstation",
+      "play",
+      "sony",
+      "juegos",
+      "videojuegos",
+      "5",
+      "consolas",
+    ],
   },
   {
     name: "Xbox Series X",
@@ -70,6 +119,16 @@ const products = [
     stock: 3,
     img: "/img/xsx.jpg",
     id: 7,
+    tags: [
+      "consola",
+      "xbox",
+      "series",
+      "x",
+      "juegos",
+      "videojuegos",
+      "microsoft",
+      "consolas",
+    ],
   },
   {
     name: "MSI GF63",
@@ -79,6 +138,7 @@ const products = [
     stock: 5,
     img: "/img/msigf63.jpg",
     id: 8,
+    tags: ["laptop", "computadora", "pc", "msi", "gf63", "notebook", "gamer"],
   },
   {
     name: "Acer Strix G513RW",
@@ -88,6 +148,16 @@ const products = [
     stock: 3,
     img: "/img/acer.jpg",
     id: 9,
+    tags: [
+      "laptop",
+      "computadora",
+      "pc",
+      "acer",
+      "g513rw",
+      "notebook",
+      "gamer",
+      "strix",
+    ],
   },
   {
     name: "Dell G15",
@@ -97,6 +167,7 @@ const products = [
     stock: 4,
     img: "/img/dellg15.jpg",
     id: 10,
+    tags: ["laptop", "computadora", "pc", "dell", "g15", "notebook", "gamer"],
   },
 ];
 

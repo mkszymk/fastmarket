@@ -1,7 +1,8 @@
 import CartWidget from "../CartWidgetComponent/CartWidget";
 import "./NavBar.css";
-import searchLogo from "./assets/searchIcon.svg";
+
 import { Link } from "react-router-dom";
+import { SearchInputComponent } from "../SearchInputComponent/SearchInputComponent";
 
 export default function NavBar() {
   return (
@@ -11,13 +12,7 @@ export default function NavBar() {
           <Link to="/">
             <div className="mainLogo">FastMarket</div>
           </Link>
-          <div className="searchBarContainer">
-            <input
-              className="searchBarInput"
-              placeholder="Buscar productos..."
-            ></input>
-            <img src={searchLogo} alt="Buscar" className="searchLogo" />
-          </div>
+          <SearchInputComponent />
           <CartWidget />
         </div>
       </div>

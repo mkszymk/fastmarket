@@ -23,7 +23,7 @@ function ItemCount({ stock, quantity, setQuantity }) {
   };
 
   useEffect(() => {
-    if (quantity === stock) {
+    if (quantity === stock || stock === undefined) {
       setBtnAddState("btnDisabled");
     } else {
       setBtnAddState("btnEnabled");

@@ -34,39 +34,4 @@
     cursor: pointer;
   }
 
-  .searchBarContainer{
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid gray;
-    border-radius: 5px;
-    position: relative;
-  }
-
-  .searchBarInput{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-    overflow: hidden;
-    border-radius: 5px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    color:rgb(73, 73, 73);
-  }
-
-  .searchLogo{
-    width: 35px;
-    height: 35px;
-    background-color: white;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-left: 2px;
-    border-left: 1px solid gray;
-    cursor: pointer;
-  }
+  

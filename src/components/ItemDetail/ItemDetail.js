@@ -7,9 +7,8 @@ import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ product }) => {
   const navigateTo = useNavigate();
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(product.stock === 0 ? 0 : 1);
   const { addToCart } = useContext(CartContext);
-
   return (
     <div className="mainItemContainer">
       <div className="itemShowContainer">
@@ -29,12 +28,20 @@ const ItemDetail = ({ product }) => {
           />
           <div className="stock">Stock disponible: {product.stock}</div>
           <button
+            disabled={quantity > product.stock}
             className="addToCartBtn"
             onClick={() => addToCart(product, quantity)}
           >
             Agregar al carrito
           </button>
-          <button className="buyNowBtn" onClick={() => navigateTo("/cart")}>
+          <button
+            disabled={quantity > product.stock}
+            className="buyNowBtn"
+            onClick={() => {
+              addToCart(product, quantity);
+              navigateTo("/cart");
+            }}
+          >
             Comprar ahora
           </button>
         </div>

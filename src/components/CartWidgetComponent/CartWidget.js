@@ -10,7 +10,14 @@ export default function CartWidget() {
   return (
     <div className="cartContainer" onClick={() => navigateTo("/cart")}>
       <img src={icon} className="cartIcon" alt="Carrito" />
-      <div className="nmberContainer">
+      <div
+        className="nmberContainer"
+        style={
+          cartContent.length === 0
+            ? { visibility: "hidden" }
+            : { visibility: "visible" }
+        }
+      >
         <span className="cartNmber">
           {cartContent?.length > 9 ? "9+" : cartContent?.length}
         </span>
